@@ -12,16 +12,14 @@
 */
 
 Route::get('/', function () {
-	$tanggal = date("d-m-Y H:i:s",time());
-
-    return view('welcome')->with('tanggal',$tanggal);
+    return view('rumah');
 });
-Route::get('halo', function () {
+Route::get('gallery', function () {
     return view('halo');
 });
 Route::get('halo/bebas', function () {
     return view('terserah.bebas');
 });
-Route::get('bebas', function () {
-    return view('terserah.bebas');
+Route::get('about', function () {
+    return view('about');
 });
